@@ -1,0 +1,172 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Mountains of Christmas', cursive;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.top-bar {
+  width: 100%;
+  height: 9%;
+  background: #fff1cc;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  .red-btn {
+    width: 3%;
+    height: 55%;
+    margin-top: 1%;
+    border: none;
+    margin-left: auto;
+
+    &.red-btn:hover {
+      cursor: pointer;
+    }
+  }
+
+  .yellow-btn {
+    width: 3%;
+    height: 55%;
+    margin-top: 1%;
+    border: none;
+    margin-right: auto;
+
+    &.yellow-btn:hover {
+      cursor: pointer;
+    }
+  }
+
+  .box {
+    width: 20%;
+    height: 50%;
+    background: #32fc53;
+    margin: auto;
+    border: 5px solid green;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.item-section {
+  width: 100%;
+  height: auto;
+  background: #d6ffe4;
+  .items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 10px;
+    padding: 3% 3% 3% 3%;
+
+    .collection-item {
+      width: 21vw;
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      position: relative;
+      text-align: center;
+      color: white;
+
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 7px;
+      border-radius: 10%;
+      overflow: hidden;
+
+      a:link {
+        text-decoration: none;
+      }
+
+      span: link {
+        text-decoration: none;
+      }
+
+      .image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        margin-bottom: 5px;
+        border-radius: 10%;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        & .image {
+          transform: scale(1.1);
+          transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+
+        & .content {
+          opacity: 0.9;
+        }
+      }
+
+      &.large {
+        height: 320px;
+      }
+
+      &:first-child {
+        margin-right: 7.5px;
+      }
+
+      &.last-child {
+        margin-left: 7.5px;
+      }
+
+      .image {
+        background-size: cover;
+        background-position: center;
+      }
+
+      & img {
+        object-fit: cover;
+        width: 100%;
+        height: 240px;
+      }
+
+      .content {
+        height: 90px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        opacity: 0.5;
+        border-radius: 45%;
+        position: absolute;
+
+        .title {
+          font-weight: bold;
+          font-size: 20px;
+          color: #4a4a4a;
+        }
+
+        .subtitle {
+          font-weight: bolder;
+          color: olive;
+          font-weight: lighter;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.home-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 5%;
+  height: auto;
+  margin-left: 91%;
+  top: 5%;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/overview.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="top-bar">
+      <img src="/img/redBtn.png" class="red-btn" onclick="window.location.href='http://localhost:3000/xmas_18/<%= category[0].lastPage %>';" ></img>
+      <div class="box"><%= title.toUpperCase() %></div>
+      <img src="/img/yellowBtn.png" class="yellow-btn" onclick="window.location.href='http://localhost:3000/xmas_18/<%= category[0].nextPage %>';"></img>
+    </nav>
+    <section class="item-section">
+        <div class="items">
+          <% for (let i=0; i<data.length; i++) { %>
+          <div class="collection-item">
+            <img class="image" src="<%= data[i].imageUrl %>" />
+            <a href="<%= data[i].imageUrl %>" class="content">
+              <h1 class="title"><%= data[i].name %></h1>
+              <h2 class="subtitle"><%= data[i].subtitle %></h2>          
+            </a>
+          </div>
+          <% } %>
+        </div>
+        <img class="home-btn" src="/img/home.png" alt="" onclick="window.location.href='http://localhost:3000/xmas_18'" />
+      </section>
+  </body>
+</html>

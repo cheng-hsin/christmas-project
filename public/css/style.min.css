@@ -1,0 +1,149 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+nav {
+  width: 100%;
+  height: 18%;
+  background: #e74545;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+}
+nav .buttonLine {
+  width: 100%;
+  height: 43px;
+  top: 41px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+nav .buttonLine .btncon {
+  width: 20%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15%;
+}
+nav .buttonLine .btncon .button {
+  height: 50px;
+  width: 100px;
+  background-color: #008716;
+  border-radius: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+nav .buttonLine .btncon .button .button:hover {
+  cursor: pointer;
+}
+nav .buttonLine .santa {
+  position: absolute;
+  display: block;
+  width: 8%;
+  height: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1%;
+  background: url(SCF_-2014.png);
+  -webkit-animation: rotating 2s linear infinite;
+  z-index: 3;
+}
+nav .buttonLine .santa.santa:hover {
+  -webkit-transform: rotate(360deg);
+  -webkit-transition-duration: 1s;
+}
+.section {
+  width: 100%;
+  height: 100%;
+  background-color: #72c166;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.hand {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  width: 20%;
+  height: auto;
+  margin-left: -8%;
+}
+.hand.hand:hover {
+  -webkit-transform: translateX(40%);
+  transform: translateX(40%);
+  cursor: pointer;
+}
+.tree {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 27%;
+  height: auto;
+  margin-left: 31%;
+  top: 25%;
+}
+.grinch {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15%;
+  height: auto;
+  margin-left: 65%;
+  top: 60%;
+}
+.getStartBtn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 14%;
+  height: auto;
+  margin-left: 80%;
+  top: 60%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.getStartBtn.getStartBtn:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
